@@ -902,7 +902,7 @@ height: 100vh;
     text-align: justify;
     text-decoration: none;    
 }
-.buttonsA a h1{
+.buttonsA h6 a h1{
     color: white;
     font-size: 20px;
     top: 65%;
