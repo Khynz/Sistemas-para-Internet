@@ -902,5 +902,15 @@ height: 100vh;
     text-align: justify;
     text-decoration: none;    
 }
-
+.buttonsA a h1{
+    color: white;
+    font-size: 20px;
+    top: 65%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;  
+}
 
