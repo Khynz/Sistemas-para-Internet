@@ -1,0 +1,906 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url(/bg1.webp)no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    background: black;
+}
+.navbar ul{
+    float: left;
+}
+.navbar ul li{
+    list-style: none;
+    float: left;
+    position: relative;
+
+}
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 22px 14px;
+}
+.navbar ul li ul{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 0px 0px 4px 4px;
+    padding: 10px;
+}
+.navbar ul li ul li a{
+   padding: 8px 14px;
+}
+.navbar ul li ul li a:hover{
+    background-color: red;
+ }
+.navbar ul li ul li{
+width: 200px;
+border-radius: 4px;
+ }
+.navbar ul li:hover ul{
+    display: block;
+}
+.logo{
+    float: left;
+    width: 180px;
+    height: 60px;
+}
+.navbar .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Ubuntu Condensed', sans-serif;
+    user-select: none;
+}
+.navbar .center h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+.navbar .center h2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 850px;
+    margin-top: 10px;
+    text-align: center;
+}
+.navbar .center .buttons{
+    text-align: center;
+    margin: 35px 280px;    
+}
+.buttons a button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.buttons a button:hover{
+    background-color: red;
+} 
+.implementacao h1{
+    color: white;
+    font-size: 20px;
+    top: 75%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+      
+}
+.implementacao{
+background: url(/bg1.webp)no-repeat;
+background-size: cover;
+height: 100vh;
+}
+
+.implementacao h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+      
+}
+.redes{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.redes h1{
+    color: white;
+    font-size: 20px;
+    top: 64%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.redes h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;    
+}
+.fluxograma {
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.fluxograma h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 15%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;      
+}
+.horario{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;    
+}
+.horario h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 15%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;       
+}
+.organo{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.organo h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 45%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;      
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+.grid img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img{
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+.historia{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.historia h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.historia h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.atracao{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.atracao h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.atracao h1{
+    color: white;
+    font-size: 20px;
+    top: 65%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.cursos{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.cursos h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.cursos h1{
+    color: white;
+    font-size: 20px;
+    top: 55%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.coordenacao{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.coordenacao h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.coordenacao h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.prof{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.prof h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.prof h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.prof h3{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 67%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;
+}
+.prof h4{
+    color: white;
+    font-size: 20px;
+    top: 90%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+}
+.pesquisa{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.pesquisa h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.pesquisa h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.formacaoredes{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.formacaoredes h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.formacaoredes h1 a{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.formacaoredes h3 a{
+    color: white;
+    font-size: 20px;
+    top: 62%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.formacaoredes h4 a{
+    color: white;
+    font-size: 20px;
+    top: 72%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;
+     
+}
+.formacaoinf{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.formacaoinf h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.formacaoinf h1 a{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.formacaoinf h3 a{
+    color: white;
+    font-size: 20px;
+    top: 62%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.formacaoinf h4 a{
+    color: white;
+    font-size: 20px;
+    top: 72%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;
+     
+}
+.formacaooutra{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.formacaooutra h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.formacaooutra h1 a{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.formacaooutra h3 a{
+    color: white;
+    font-size: 20px;
+    top: 62%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.formacaooutra h4 a{
+    color: white;
+    font-size: 20px;
+    top: 72%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;
+     
+}
+.latusensu{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.latusensu h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.latusensu h1 a{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.latusensu h3 a{
+    color: white;
+    font-size: 20px;
+    top: 62%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.latusensu h4 a{
+    color: white;
+    font-size: 20px;
+    top: 72%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;
+     
+}
+.mestrado{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.mestrado h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.mestrado h1 a{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.mestrado h3 a{
+    color: white;
+    font-size: 20px;
+    top: 62%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.doutorado{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.doutorado h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.doutorado h1 a{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.doutorado h3 a{
+    color: white;
+    font-size: 20px;
+    top: 62%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.certificacao{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.certificacao h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic;    
+}
+.certificacao h1{
+    color: white;
+    font-size: 20px;
+    top: 55%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;    
+}
+.temalivre{
+    background: url(/bg1.webp)no-repeat;
+    background-size: cover;
+    height: 100vh;     
+}
+.temalivre h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic; 
+    text-align: center;   
+}
+.temalivre h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.temalivre h3 a{
+    color: white;
+    font-size: 20px;
+    top: 62%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+.buttonsA a button{
+    top: 70%;
+    left: 50%;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.buttonsA button:hover{
+    background-color: red;
+}
+.buttonsA a h1 button{
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.buttonsA a h3 button{
+    top: 60%;
+    left: 50%;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.buttonsA a h4 button{
+    top: 70%;
+    left: 50%;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.mercado h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic; 
+    text-align: center;   
+}
+.mercado h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+
+.contato h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic; 
+    text-align: center;   
+}
+.contato h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+
+.contato h1 a{
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;    
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+       
+}
+.sobre h2{
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    top: 35%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-style: italic; 
+    text-align: center;   
+}
+.sobre h1{
+    color: white;
+    font-size: 20px;
+    top: 52%;
+    left: 50%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: justify;
+    text-decoration: none;    
+}
+
+
